@@ -1,0 +1,208 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #000;
+}
+.image-container{
+    display: flex;
+    height: 50vh;
+    background: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+
+}
+.image-container .content{
+    color: #fff;
+    max-width: 760px;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.image-container h1{
+    font-size: 32px;
+    font-weight: 700;
+
+
+    
+}
+.image-container p{
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.image-container .generate-form{
+    height: 56px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 45px 0 15px;
+    background: #fff;
+    border-radius: 30px;
+    padding: 6px;
+    border: 3px solid rgb(244, 36, 144);
+}
+.input-prompt{
+    width: 100%;
+    height: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    padding: 0 17px;
+    font-size: 16px;
+
+}
+.generate-form .controls{
+    display: flex;
+    height: 100%;
+    gap: 15px;
+}
+.generate-form .img-quantity{
+    font-size: 16px;
+    background: none;
+    outline: none;
+    border: none;
+}
+.generate-form .generate-btn{
+    border: none;
+    outline: none;
+    background: rgb(255, 140, 0);
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 30px;
+    padding: 0 25px;
+    cursor: pointer;
+    border: 2px dashed black;
+}
+
+
+.image-show{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0 15px;
+    max-width: 1250px;
+    margin: 50px auto;
+    justify-content: center;
+    
+}
+.image-show .image-card{
+    width: 285px;
+    aspect-ratio:  1 / 1;
+    border-radius: 5px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2f2;
+    position: relative;
+    border: 2px dashed grey;
+
+}
+.image-show .image-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.image-show .image-card .download-btn img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+.image-show .image-card .download-btn{
+    position: relative;
+    display: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    bottom: 60px;
+    right: -25px;
+    transition: 0.8s all ease;
+}
+.image-show .image-card:not(.loading):hover .download-btn{
+    display: flex;
+}
+
+.image-show .image-card.loading img{
+    width: 150px;
+    height: 150px;
+    margin-top: 100px;
+    margin-left: 50px;
+    
+}
+ 
+@media screen and (max-width: 760px) {
+    .image-container{
+        font-size: 18px;
+    }
+    .image-container p {
+        font-size: 16px;
+    }
+    .image-container .generate-form{
+        margin-top: 30px;
+        height: 52px;
+        display: block;
+    }
+    .generate-form .controls{
+        height: 40px;
+        margin-top: 15px;
+        align-items: center;
+        justify-content: flex-end;
+    
+    }
+    .generate-form .img-quantity{
+        color: #fff;
+    }
+    .generate-form .img-quantity option{
+        color: #000;
+    }
+    .generate-form .generate-btn{
+        height: 100%;
+
+    }
+    .image-show{
+        margin-top: 20px;
+    }
+    .image-show .image-card:not(.loading) .download-btn{
+display: flex;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .image-show .image-card{
+        width: 100%;
+    }
+
+}
+
+ span{
+    position: relative;
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+    left: 35%;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: cursive;
+    text-shadow: 10px 0px 254px rgba(0, 0, 0, 0.25);
+    flex-wrap: wrap;
+    gap: 10px;
+ font-weight: 500;
+ color: aliceblue;
+    
+
+}
