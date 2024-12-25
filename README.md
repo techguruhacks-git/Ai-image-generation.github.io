@@ -1,4 +1,6 @@
 # Ai-image-generation.github.io
+
+Disclaimer: Made with the help of Tutorials and i changed the user interface and add some my own features and take help of Ai to solve minor errors only.
  
 Image Generation with Javascript
 
